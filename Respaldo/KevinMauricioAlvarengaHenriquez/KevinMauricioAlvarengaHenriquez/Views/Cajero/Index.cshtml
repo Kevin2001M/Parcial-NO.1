@@ -1,0 +1,18 @@
+﻿@model KevinMauricioAlvarengaHenriquez.Models.CajeroViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("Index", "Cajero", FormMethod.Post))
+{
+    <label>Monto</label>
+    <br />
+    @Html.TextBoxFor(m => m.monto, new { type = "number" })
+    <br />
+
+    <br />
+    <input type="submit" class="btn btn-success">
+}
+
